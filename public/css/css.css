@@ -1,0 +1,48 @@
+.w01 {
+	font-size: 12px;
+	line-height: 24px;
+	color: #333333;
+	text-decoration: none;
+}
+.w01 a:hover {
+	font-size: 12px;
+	line-height: 24px;
+	color: #FF6600;
+	text-decoration: none;
+}
+.w02 {
+	font-size: 14px;
+	line-height: 24px;
+	color: #228fd4;
+	text-decoration: none;
+}
+.w03 {
+	font-size: 14px;
+	line-height: 24px;
+	color: #212121;
+	text-decoration: none;
+}
+.w03 a:hover {
+	font-size: 14px;
+	line-height: 24px;
+	color: #FF6600;
+	text-decoration: none;
+}
+.w04 {
+	font-size: 14px;
+	line-height: 24px;
+	color: #eb6100;
+	text-decoration: none;
+}
+.w05 {
+	font-size: 14px;
+	line-height: 32px;
+	color: #212121;
+	text-decoration: none;
+}
+.w05 a:hover {
+	font-size: 14px;
+	line-height: 32px;
+	color: #FF6600;
+	text-decoration: none;
+}

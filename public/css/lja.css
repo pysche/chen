@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+.hide {
+	display: none;
+}
+
+dd.auth_pane {
+	min-width: 600px;
+	_width: 600px;
+}
+
+dd.auth_pane dd {
+	width: 350px;
+}
+
+.auth_pane fieldset {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.auth_pane fieldset label {
+	float: none;
+}
+
+dl.block {
+	width: 100% !important;
+}
+
+ul.auth_list li {
+	width: 590px
+}
+
+ul.auth_list li dl {
+	width: 100%;
+}
+
+.readContent {
+	padding: 10px;
+	border: 1px solid #aaa;
+	background: #fafafa;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+
+.pageContent.txtContent {
+	padding: 0px 10px;
+}
