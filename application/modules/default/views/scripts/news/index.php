@@ -14,7 +14,7 @@
     </table>
       <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
         <tr>
-          <td width="722" class="w05">·<a href="ac_11a.html" target="_blank" class="w05">辽河支流浑河上游发生超50年一遇特大洪水 大伙房水库拦洪削峰作用显著</a><br />
+          <td width="722" class="w05">·<a href="<?php echo $this->URL;?>/read" target="_blank" class="w05">辽河支流浑河上游发生超50年一遇特大洪水 大伙房水库拦洪削峰作用显著</a><br />
             ·美军拟进驻南海前沿菲律宾基地 警惕中国动向 <br />
             ·俄媒：中国国产航母应实现全电动 混合动力 <br />
             ·南海渔民身兼海上民兵：建海洋强国我们义不容辞 <br />
