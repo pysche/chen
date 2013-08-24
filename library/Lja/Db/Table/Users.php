@@ -31,6 +31,8 @@ class Lja_Db_Table_Users extends Lja_Db_Table {
 	public function update($params, $where=null) {
 		if (isset($params['Password']) && $params['Password']=='') {
 			unset($params['Password']);
+		} else if (isset($params['Password']) && $params['Password']!='') {
+			$params['Password'] = md5($params['Password']);
 		}
 
 		if (isset($params['AuthMask'])) {

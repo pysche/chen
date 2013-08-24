@@ -40,7 +40,7 @@ class Lja_Controller_Action_Dwz extends Lja_Controller_Action_Base {
 			if ($this->isAjax()) {
 				$this->ajaxReturn(301, '会话超时，请重新登录');
 			} else {
-				$this->_helper->getHelper('Redirector')->gotoUrl('login');
+				$this->_helper->getHelper('Redirector')->gotoUrl($this->_request->getParam('module').'/login');
 			}
 		}
 	}

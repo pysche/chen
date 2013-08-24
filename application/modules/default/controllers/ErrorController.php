@@ -32,7 +32,9 @@ class ErrorController extends Lja_Controller_Action_Base
         if ($this->getInvokeArg('displayExceptions') == true) {
             $this->view->exception = $errors->exception;
         }
-        
+                
+        Lja_Log::getInstance()->error($errors->exception->getMessage()."\n".$errors->exception->getTraceAsString());
+
         $this->view->request   = $errors->request;
     }
 

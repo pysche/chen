@@ -43,8 +43,8 @@ class Lja_Config
 	public static function &appConfig()
 	{
 		self::getInstance();
-		$crm = self::$config->crm;
-		return $crm;
+		$lja = self::$config->lja;
+		return $lja;
 	}
 	
 }

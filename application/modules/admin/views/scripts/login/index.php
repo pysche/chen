@@ -6,14 +6,19 @@ if (!$this->isAjax) {
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=7" />
-<title>CRM</title>
+<title>后台管理</title>
 
+<base href="http://<?php echo $_SERVER['HTTP_HOST'];?>" /> 
 <link href="dwz/themes/default/style.css" rel="stylesheet" type="text/css" />
 <link href="dwz/themes/css/core.css" rel="stylesheet" type="text/css" />
 <!--[if IE]>
 <link href="dwz/themes/css/ieHack.css" rel="stylesheet" type="text/css" />
 <![endif]-->
-
+<style type='text/css'>
+.dialog {
+	position: relative;
+}
+</style>
 </head>
 <body>
 <div class="dialog" style="z-index: 1000; height: 260px; width: 520px;margin: 200px auto;position: inherit !important;">
@@ -34,7 +39,7 @@ if (!$this->isAjax) {
 ?>
 <div class="pageContent">
 	
-	<form method="post" action="login/doLogin" class="pageForm" onsubmit="return validateCallback(this, dialogAjaxDone)">
+	<form method="post" action="<?php echo $this->URL;?>/doLogin" class="pageForm" onsubmit="return validateCallback(this, dialogAjaxDone)">
 		<div class="pageFormContent" layoutH="58" style='<?php echo $style;?>'>
 			<div class="unit">
 				<label>用户名：</label>

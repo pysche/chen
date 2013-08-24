@@ -3,11 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=7" />
-<title>CRM</title>
+<title>后台管理</title>
 
+<base href="http://<?php echo $_SERVER['HTTP_HOST'];?>" /> 
 <link href="dwz/themes/default/style.css" rel="stylesheet" type="text/css" />
 <link href="dwz/themes/css/core.css" rel="stylesheet" type="text/css" />
-<link href="css/crm.css" rel="stylesheet" type="text/css" />
+<link href="css/lja.css" rel="stylesheet" type="text/css" />
 <!--[if IE]>
 <link href="dwz/themes/css/ieHack.css" rel="stylesheet" type="text/css" />
 <![endif]-->
@@ -44,7 +45,7 @@
 
 				<div class="accordion" fillSpace="sidebar">
 					<?php
-						foreach (Crm_Config::appConfig()->auth_group->toArray() as $group) {
+						foreach (Lja_Config::appConfig()->auth_group->toArray() as $group) {
 $title=<<<EOF
 					<div class="accordionHeader">
 						<h2><span>Folder</span>{$group['title']}</h2>
@@ -54,7 +55,7 @@ EOF;
 							foreach ($group['auth'] as $v) {
 								if ($v['display'] && isset($this->member['AuthMask'][$v['key']])) {
 $menus .=<<<EOF
-<li><a href='{$v['route']}' target='navTab' rel='{$v['key']}'>{$v['title']}</a></li>
+<li><a href='{$this->URL}{$v['route']}' target='navTab' rel='{$v['key']}'>{$v['title']}</a></li>
 EOF;
 								}
 							}
@@ -123,5 +124,5 @@ EOF;
 <script src="uploadify/scripts/jquery.uploadify.js" type="text/javascript"></script>
 <script src="dwz/js/dwz.min.js" type="text/javascript"></script>
 <script src="dwz/js/dwz.regional.zh.js" type="text/javascript"></script>
-<script src="js/crm.js" type="text/javascript"></script>
+<script src="js/lja.js" type="text/javascript"></script>
 </html>

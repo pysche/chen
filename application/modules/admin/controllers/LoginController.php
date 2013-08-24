@@ -1,11 +1,7 @@
 <?php
 
 class Admin_LoginController extends Lja_Controller_Action_Dwz {
-	
-	public function init() {
-		parent::init();
-	}
-	
+
 	public function indexAction() {
 	}
 
@@ -29,13 +25,13 @@ class Admin_LoginController extends Lja_Controller_Action_Dwz {
 			if ($this->isAjax()) {
 				$this->success('登录成功');
 			} else {
-				$this->_helper->getHelper('Redirector')->gotoUrl('/');
+				$this->_helper->getHelper('Redirector')->gotoUrl($this->MODULE);
 			}
 		} else {
 			if ($this->isAjax()) {
 				$this->error('登录失败');
 			} else {
-				$this->_helper->getHelper('Redirector')->gotoUrl('/login');
+				$this->_helper->getHelper('Redirector')->gotoUrl($this->MODULE.'/login');
 			}
 		}
 	}
@@ -49,7 +45,7 @@ class Admin_LoginController extends Lja_Controller_Action_Dwz {
 		unset($_SESSION['Uid']);
 		session_unset();
 
-		$this->_helper->getHelper('Redirector')->gotoUrl('/login');
+		$this->_helper->getHelper('Redirector')->gotoUrl($this->MODULE.'/login');
 	}
 }
 
