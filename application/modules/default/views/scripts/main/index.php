@@ -170,7 +170,7 @@
 <map name="Map3" id="Map3"><area shape="rect" coords="8,5,201,55" href="http://hao.360.cn/weizhang.html" target="_blank" />
 </map>
 <map name="Map4" id="Map4">
-<area shape="rect" coords="394,14,461,43" href="ac_11.html" />
+<area shape="rect" coords="394,14,461,43" href="/news" />
 </map>
 
-<?php include(dirname(__FILE__).'/include/footer.php');
+<?php include(dirname(__FILE__).'/../include/footer.php');

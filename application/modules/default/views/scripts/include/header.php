@@ -3,6 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>苏州安诚汽车代驾服务有限公司</title>
+<base href="http://<?php echo $_SERVER['HTTP_HOST'];?>" /> 
 <style type="text/css">
 <!--
 body {
