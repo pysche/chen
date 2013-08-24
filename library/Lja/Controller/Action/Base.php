@@ -14,6 +14,12 @@ class Lja_Controller_Action_Base extends Zend_Controller_Action {
 		$this->view->cName = $this->_request->getControllerName();
 		$this->view->ACTION = $this->aName = $this->_request->getActionName();
 		
+		$name = $this->_request->getControllerName ();
+		$m = $this->_request->getModuleName();
+
+		$this->view->URL = $m=='default' ? $name : $this->_request->getModuleName().'/'.$name;
+		$this->view->MODULE = $name;
+
 		session_start();
 	}
 

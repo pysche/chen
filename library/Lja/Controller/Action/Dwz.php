@@ -11,13 +11,7 @@ class Lja_Controller_Action_Dwz extends Lja_Controller_Action_Base {
 	public function init() {
 		parent::init ();
 		
-		$name = $this->_request->getControllerName ();
-		$m = $this->_request->getModuleName();
-
-		$this->view->URL = $m=='default' ? $name : $this->_request->getModuleName().'/'.$name;
-		$this->view->MODULE = $name;
-
-		$this->mName = $this->auth = strtolower($name);
+		$this->mName = $this->auth = strtolower($this->_request->getControllerName());
 		$this->u = &$this->M('users');
 		$this->uid = (int)$_SESSION['Uid'];
 		if ($this->uid>0) {
