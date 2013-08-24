@@ -22,7 +22,7 @@
 酒店地址：工业园区独墅湖科教创新区月亮湾街8号(近独墅湖体育馆)</td>
             </tr>
             <tr>
-              <td align="right"><a href="<?php echo $this->URL;?>/detail?id="><img src="images/more.gif" width="55" height="20" border="0" /></a></td>
+              <td align="right"><a href="<?php echo $this->URL;?>/read?id="><img src="images/more.gif" width="55" height="20" border="0" /></a></td>
             </tr>
           </table></td>
         </tr>
@@ -41,7 +41,7 @@
                   酒店地址：工业园区独墅湖科教创新区月亮湾街8号(近独墅湖体育馆)</td>
               </tr>
               <tr>
-                <td align="right"><a href="<?php echo $this->URL;?>/detail?id="><img src="images/more.gif" width="55" height="20" border="0" /></a></td>
+                <td align="right"><a href="<?php echo $this->URL;?>/read?id="><img src="images/more.gif" width="55" height="20" border="0" /></a></td>
               </tr>
           </table></td>
         </tr>

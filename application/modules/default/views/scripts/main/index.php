@@ -41,7 +41,7 @@
     </table>
       <table width="209" border="0" cellspacing="0" cellpadding="0">
         <tr>
-          <td><a href="ac_09.html"><img src="images/ac_g_29.gif" width="209" height="62" border="0" /></a></td>
+          <td><a href="/questions"><img src="images/ac_g_29.gif" width="209" height="62" border="0" /></a></td>
         </tr>
         <tr>
           <td><img src="images/ac_g_30.gif" width="209" height="62" border="0" usemap="#Map" /></td>
@@ -59,7 +59,7 @@
           <tr>
             <td height="88" background="images/index_2013_02.gif"><table width="410" border="0" align="center" cellpadding="0" cellspacing="0">
               <tr>
-                <td width="339" height="30" class="w01">·<a href="ac_11a.html" target="_blank" class="w01">辽河支流浑河上游发生超50年一遇特大洪水 大伙房水...</a></td>
+                <td width="339" height="30" class="w01">·<a href="/news/read" target="_blank" class="w01">辽河支流浑河上游发生超50年一遇特大洪水 大伙房水...</a></td>
                 <td width="71" align="right" class="w01">2013-8-12</td>
               </tr>
               <tr>
@@ -108,7 +108,7 @@
                     　　为保证我公司代驾服务质量和客户的人身及财产安全，我公司特制订...</span></td>
                   </tr>
                   <tr>
-                    <td align="right"><a href="ac_02.html"><img src="images/more.gif" width="55" height="20" border="0" /></a></td>
+                    <td align="right"><a href="/aboutus"><img src="images/more.gif" width="55" height="20" border="0" /></a></td>
                   </tr>
                 </table></td>
               </tr>
@@ -123,11 +123,11 @@
     </table>
       <table width="794" border="0" cellspacing="0" cellpadding="0">
         <tr>
-          <td><a href="ac_03.html"><img src="images/ac_g_32a.gif" width="157" height="236" border="0" id="Image7" onmouseover="MM_swapImage('Image7','','images/ac_g_32.gif',1)" onmouseout="MM_swapImgRestore()" /></a></td>
-          <td><a href="ac_03_3.html"><img src="images/ac_g_34a.gif" width="159" height="236" border="0" id="Image9" onmouseover="MM_swapImage('Image9','','images/ac_g_34.gif',1)" onmouseout="MM_swapImgRestore()" /></a><a href="ac_03_2.html"></a></td>
-          <td><a href="ac_03_2.html"><img src="images/ac_g_33a.gif" width="160" height="236" border="0" id="Image8" onmouseover="MM_swapImage('Image8','','images/ac_g_33.gif',1)" onmouseout="MM_swapImgRestore()" /></a><a href="ac_03_3.html"></a></td>
-          <td><a href="ac_03_4.html"><img src="images/ac_g_35a.gif" width="160" height="236" border="0" id="Image10" onmouseover="MM_swapImage('Image10','','images/ac_g_35.gif',1)" onmouseout="MM_swapImgRestore()" /></a><a href="ac_03_4.html"></a></td>
-          <td><a href="ac_03_5.html"><img src="images/ac_g_36a.gif" width="158" height="236" border="0" id="Image13" onmouseover="MM_swapImage('Image13','','images/ac_g_36.gif',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+          <td><a href="/services"><img src="images/ac_g_32a.gif" width="157" height="236" border="0" id="Image7" onmouseover="MM_swapImage('Image7','','images/ac_g_32.gif',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+          <td><a href="/services/travel"><img src="images/ac_g_34a.gif" width="159" height="236" border="0" id="Image9" onmouseover="MM_swapImage('Image9','','images/ac_g_34.gif',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+          <td><a href="/services/biz"><img src="images/ac_g_33a.gif" width="160" height="236" border="0" id="Image8" onmouseover="MM_swapImage('Image8','','images/ac_g_33.gif',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+          <td><a href="/services/long"><img src="images/ac_g_35a.gif" width="160" height="236" border="0" id="Image10" onmouseover="MM_swapImage('Image10','','images/ac_g_35.gif',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+          <td><a href="/services/train"><img src="images/ac_g_36a.gif" width="158" height="236" border="0" id="Image13" onmouseover="MM_swapImage('Image13','','images/ac_g_36.gif',1)" onmouseout="MM_swapImgRestore()" /></a></td>
         </tr>
       </table>
     </td>
@@ -139,7 +139,7 @@
       <tr>
         <td width="160" background="images/index_2013_11.gif"><img src="images/index_2013_10.gif" width="160" height="35" /></td>
         <td width="754" background="images/index_2013_11.gif">&nbsp;</td>
-        <td width="87" align="center" background="images/index_2013_11.gif"><a href="ac_10.html"><img src="images/more2.gif" width="44" height="13" border="0" /></a></td>
+        <td width="87" align="center" background="images/index_2013_11.gif"><a href="/drivers"><img src="images/more2.gif" width="44" height="13" border="0" /></a></td>
       </tr>
     </table>
       <table width="990" border="0" align="center" cellpadding="0" cellspacing="0">
@@ -163,7 +163,7 @@
 <?php include(dirname(__FILE__).'/../include/bottom.php');?>
 
 
-<map name="Map2" id="Map2"><area shape="rect" coords="13,11,238,114" href="index.html" />
+<map name="Map2" id="Map2"><area shape="rect" coords="13,11,238,114" href="/" />
 </map>
 <map name="Map" id="Map"><area shape="rect" coords="6,5,199,56" href="http://hao.360.cn/weizhang.html" target="_blank" />
 </map>
