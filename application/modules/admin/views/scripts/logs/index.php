@@ -36,7 +36,7 @@
 			<tr target="sid_obj" rel="<?php echo $vo->id;?>">
 				<td><?php echo $vo->Uid;?></td>
 				<td><?php echo $vo->Ip;?></td>
-				<td><?php echo date('Y-m-d H:i:s', $vo->ActTime);?></td>
+				<td><?php echo $vo->ActTime;?></td>
 				<td><?php echo $vo->Message;?></td>
 			</tr>
 		<?php }?>

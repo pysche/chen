@@ -55,7 +55,7 @@ EOF;
 							foreach ($group['auth'] as $v) {
 								if ($v['display'] && isset($this->member['AuthMask'][$v['key']])) {
 $menus .=<<<EOF
-<li><a href='{$this->URL}{$v['route']}' target='navTab' rel='{$v['key']}'>{$v['title']}</a></li>
+<li><a href='{$this->MODULE}{$v['route']}' target='navTab' rel='{$v['key']}'>{$v['title']}</a></li>
 EOF;
 								}
 							}

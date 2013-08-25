@@ -1,5 +1,5 @@
 <form action="<?php echo $this->URL;?>/insert?navTabId=<?php echo $this->MODULE;?>" method="post" class="pageForm required-validate" onsubmit="return validateCallback(this, dialogAjaxDone)">
-<input type='hidden' name='Category' value='<?php echo (int)Crm_Config::appConfig()->db->news_category_id;?>' />
+<input type='hidden' name='Category' value='<?php echo (int)Lja_Config::appConfig()->db->news_category_id;?>' />
 <div class="pageContent">
 	<div class="pageFormContent" layoutH="58">
 		<dl>
