@@ -25,6 +25,7 @@ dd.auth_pane dd {
 
 dl.block {
 	width: 100% !important;
+	height: auto !important;
 }
 
 ul.auth_list li {
@@ -46,3 +47,14 @@ ul.auth_list li dl {
 .pageContent.txtContent {
 	padding: 0px 10px;
 }
+
+ol.attach_list { margin: 0px 0px 4px 0px; padding: 0; }
+ol.attach_list li { list-style: none; margin: 5px; padding: 5px; width: 450px; border: 1px solid #e8f4ff; background: #eee; }
+ol.attach_list li:hover { cursor: hand; }
+
+ul.attach_list { margin: 0px; padding: 4px; }
+ul.attach_list li { list-style: none; }
+ul.attach_list li.upload_error { border: 1px solid darkred; color: red; padding-left: 10px; }
+
+div.upload_loading { background: url(../images/loading.gif); width: 24px; }
+ul.attach_list li:hover { cursor: hand; }

@@ -157,6 +157,8 @@ class Lja_Controller_Action_Dwz extends Lja_Controller_Action_Base {
 			$dbMap['Uname'] = $this->member['Realname'];
 
 			$id = $model->insert ( $dbMap );
+
+			$_SERVER['new_article_hash'] = null;
 			$this->success ( '操作成功' );
 		} catch ( Exception $e ) {
 			$this->error ( '操作失败' );
@@ -176,6 +178,7 @@ class Lja_Controller_Action_Dwz extends Lja_Controller_Action_Base {
 			
 			$where = $db->quoteInto ( 'id=?', $_REQUEST ['id'] );
 			$row_affected = $model->update ( $dbMap, $where );
+			$_SERVER['new_article_hash'] = null;
 			
 			$this->success ( '操作成功' );
 		} catch ( Exception $e ) {

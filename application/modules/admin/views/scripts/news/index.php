@@ -23,9 +23,9 @@
 <div class="pageContent">
 	<div class="panelBar">
 		<ul class="toolBar">
-			<li><a class="add" width='750' height='500' href="<?php echo $this->URL; ?>/add" target="dialog" mask="true" title="添加内容"><span>添加内容</span></a></li>
+			<li><a class="add" width='750' height='500' href="<?php echo $this->URL; ?>/add" target="navTab" mask="true" title="添加内容"><span>添加内容</span></a></li>
 			<li><a class="delete" href="<?php echo $this->URL; ?>/foreverdelete?id={sid_obj}&navTabId=<?php echo $this->MODULE?>" target="ajaxTodo" title="你确定要删除吗？" warn="请选择一条数据"><span>删除</span></a></li>
-			<li><a width='750' height='500' class="edit" href="<?php echo $this->URL; ?>/edit?id={sid_obj}" target="dialog" mask="true" warn="请选择一条数据" title="编辑内容"><span>编辑内容</span></a></li>
+			<li><a width='750' height='500' class="edit" href="<?php echo $this->URL; ?>/edit?id={sid_obj}" target="navTab" mask="true" warn="请选择一条数据" title="编辑内容"><span>编辑内容</span></a></li>
 		</ul>
 	</div>
 

@@ -116,7 +116,8 @@ EOF;
 </body>
 
 <script src="dwz/js/speedup.js" type="text/javascript"></script>
-<script src="dwz/js/jquery-1.4.4.min.js" type="text/javascript"></script>
+<script src="dwz/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="js/jquery-ui.min.js" type="text/javascript"></script>
 <script src="dwz/js/jquery.cookie.js" type="text/javascript"></script>
 <script src="dwz/js/jquery.validate.js" type="text/javascript"></script>
 <script src="dwz/js/jquery.bgiframe.js" type="text/javascript"></script>
