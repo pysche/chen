@@ -1,4 +1,11 @@
 
+function Lja_LoadBaiduMapScript(callback)
+{
+	var script = document.createElement('script');
+	script.src = 'http://api.map.baidu.com/api?v=1.3&callback='+callback;
+	document.body.appendChild(script);
+}
+
 function Lja_FormatFileSize(size) {
 	re = '';
 	

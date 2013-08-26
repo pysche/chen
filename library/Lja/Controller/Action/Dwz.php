@@ -158,7 +158,7 @@ class Lja_Controller_Action_Dwz extends Lja_Controller_Action_Base {
 
 			$id = $model->insert ( $dbMap );
 
-			$_SERVER['new_article_hash'] = null;
+			$_SESSION['new_article_hash'] = null;
 			$this->success ( '操作成功' );
 		} catch ( Exception $e ) {
 			$this->error ( '操作失败' );
