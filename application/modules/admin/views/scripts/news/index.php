@@ -45,7 +45,7 @@
 				<td><?php echo $vo->Title;?></td>
 				<td>新闻公告</td>
 				<td><?php echo $vo->SortNum;?></td>
-				<td><?php echo $vo->PubFlag ? '是' : '否';?>
+				<td><?php echo $vo->PubFlag ? '是' : '否';?></td>
 				<td><?php echo $vo->CreateTime;?></td>
 			</tr>
 		<?php }?>

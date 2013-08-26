@@ -13,7 +13,7 @@ abstract class Lja_Cache_Base
 	
 	protected static function &loadHandler($handler, array $options=array())
 	{
-		include_once 'Crm/Cache/Handler/'.ucfirst($handler).'.php';
+		include_once 'Lja/Cache/Handler/'.ucfirst($handler).'.php';
 		$className = 'Lja_Cache_Handler_'.ucfirst($handler);
 		$cacheHandler = new ${className}($options);
 		

@@ -9,6 +9,22 @@
 
 class Lja_File
 {
+	public function Url($fid) {
+		$cacher = &Lja_Cache_Remote::getInstance();
+		$key = 'attach_'.$fid;
+		$url = $cacher->get($key);
+
+		if (!$url) {
+			$file = &Lja_Db::t('attachment')->findById($fid);
+			if ($file) {
+				$url = '/files/'.substr($fid, 0, 1).'/'.substr($fid, 1, 1).'/'.$fid.'.'.$file->Ext;
+				$cacher->set($key, $url);
+			}
+		}
+
+		return $url;
+	}
+
 	public static function &getByHash($hash)
 	{
 		$rows = &Lja_Db::t('attachment')->getByHash($hash);

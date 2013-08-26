@@ -58,3 +58,16 @@ ul.attach_list li.upload_error { border: 1px solid darkred; color: red; padding-
 
 div.upload_loading { background: url(../images/loading.gif); width: 24px; }
 ul.attach_list li:hover { cursor: hand; }
+
+td.thumbnail {
+	height: 80px;
+}
+
+td.thumbnail div {
+	height: auto !important;
+}
+
+td.thumbnail div img {
+	max-width: 80px;
+	max-height: 160px;
+}

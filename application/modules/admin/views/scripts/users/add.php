@@ -17,7 +17,7 @@
 			<dt>权限：</dt>
 			<dd class='auth_pane'>
 			<?php
-				$ag = Crm_Config::appConfig()->auth_group->toArray();
+				$ag = Lja_Config::appConfig()->auth_group->toArray();
 				foreach ($ag as $group) {
 			?>
 			<fieldset>

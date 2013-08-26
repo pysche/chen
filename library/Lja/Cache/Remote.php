@@ -23,10 +23,10 @@ class Lja_Cache_Remote extends Lja_Cache_Base
 	public static function &getInstance()
 	{
 		if (self::$instance==null) {
-			$options = Lja_Config::appConfig()->cache->handler->remote;
+			$options = Lja_Config::appConfig()->cache->handler->remote->toArray();
 			self::$instance = self::loadHandler('Memcache', $options);
 		}
 		
-		return self::$instances[$cityId];
+		return self::$instance;
 	}
 }
