@@ -72,8 +72,8 @@ function Lja_AppendAttachRow(d, key)
 }
 
 $(function(){
-	DWZ.init("dwz/dwz.frag.xml", {
-		loginUrl:"login", 
+	DWZ.init("/dwz.frag.xml", {
+		loginUrl:"admin/login", 
 		loginTitle:"登录",	// 弹出登录对话框
 		statusCode:{ok:1, error:0, timeout:301}, //【可选】
 		pageInfo:{pageNum:"pageNum", numPerPage:"numPerPage", orderField:"orderField", orderDirection:"orderDirection"}, //【可选】

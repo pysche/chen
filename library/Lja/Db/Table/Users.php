@@ -3,6 +3,14 @@
 class Lja_Db_Table_Users extends Lja_Db_Table {
 	protected $_name='Lja_Users';
 
+	public function updatePassword($newPassword, $id) {
+		$db = &$this->getAdapter();
+		$where = $db->quoteInto('id=?', $id);
+		return $this->update(array(
+			'Password' => md5($newPassword)
+			), $where);
+	}
+
 	public function insert($params) {
 		$params['Password'] = md5($params['Password']);
 		
@@ -31,8 +39,6 @@ class Lja_Db_Table_Users extends Lja_Db_Table {
 	public function update($params, $where=null) {
 		if (isset($params['Password']) && $params['Password']=='') {
 			unset($params['Password']);
-		} else if (isset($params['Password']) && $params['Password']!='') {
-			$params['Password'] = md5($params['Password']);
 		}
 
 		if (isset($params['AuthMask'])) {

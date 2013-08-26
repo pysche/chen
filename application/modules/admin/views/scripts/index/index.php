@@ -21,7 +21,7 @@
 			<div class="headerNav">
 				
 				<ul class="nav">
-					<li><a href="login/logout">退出</a></li>
+					<li><a href="<?php echo $this->MODULE;?>/login/logout">退出</a></li>
 				</ul>
 				<ul class="themeList" id="themeList">
 					<li theme="default"><div class="selected">蓝色</div></li>
@@ -73,6 +73,14 @@ EOF;
 							$menus!='' && $menus = '<ul class="tree treeFolder">'.$menus.'</ul>';
 						}
 					?>
+					<div class="accordionHeader">
+						<h2><span>Folder</span>个人菜单</h2>
+					</div>
+					<div class='accordionContent'>
+						<ul class='tree treeFolder'>
+							<li><a href='<?php echo $this->MODULE;?>/self' target='dialog' rel='self'>修改密码</a></li>
+						</ul>
+					</div>
 				</div>
 
 			</div>
@@ -117,13 +125,45 @@ EOF;
 
 <script src="dwz/js/speedup.js" type="text/javascript"></script>
 <script src="dwz/js/jquery-1.7.2.min.js" type="text/javascript"></script>
-<script src="js/jquery-ui.min.js" type="text/javascript"></script>
+<script src='js/jquery-ui.min.js' type='text/javascript'></script>
 <script src="dwz/js/jquery.cookie.js" type="text/javascript"></script>
 <script src="dwz/js/jquery.validate.js" type="text/javascript"></script>
 <script src="dwz/js/jquery.bgiframe.js" type="text/javascript"></script>
-<script src="xheditor/xheditor-1.2.1.min.js" type="text/javascript"></script>
-<script src="uploadify/scripts/jquery.uploadify.js" type="text/javascript"></script>
-<script src="dwz/js/dwz.min.js" type="text/javascript"></script>
+<script src="dwz/xheditor/xheditor-1.2.1.min.js" type="text/javascript"></script>
+<script src="dwz/uploadify/scripts/jquery.uploadify.js" type="text/javascript"></script>
+
+<script src="dwz/js/dwz.core.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.util.date.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.validate.method.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.barDrag.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.drag.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.tree.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.accordion.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.ui.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.theme.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.switchEnv.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.alertMsg.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.contextmenu.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.navTab.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.tab.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.resize.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.dialog.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.dialogDrag.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.sortDrag.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.cssTable.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.stable.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.taskBar.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.ajax.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.pagination.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.database.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.datepicker.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.effects.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.panel.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.checkbox.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.history.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.combox.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.print.js" type="text/javascript"></script>
+
 <script src="dwz/js/dwz.regional.zh.js" type="text/javascript"></script>
 <script src="js/lja.js" type="text/javascript"></script>
 </html>

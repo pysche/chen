@@ -1,4 +1,4 @@
-<form action="<?php echo $this->URL;?>/insert?navTabId=<?php echo $this->MODULE;?>" method="post" class="pageForm required-validate" onsubmit="return validateCallback(this, dialogAjaxDone)">
+<form action="<?php echo $this->URL;?>/insert?navTabId=<?php echo $this->MODULE;?>" method="post" class="pageForm required-validate" onsubmit="return validateCallback(this, navTabAjaxDone)">
 <div class="pageContent">
 	<div class="pageFormContent" layoutH="58">
 		<dl>
