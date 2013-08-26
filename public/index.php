@@ -21,11 +21,11 @@ set_include_path(implode(PATH_SEPARATOR, array(
 )));
 
 require_once 'Lja' . DIRECTORY_SEPARATOR . 'Loader.php';
-LJA_Loader::getInstance()->register();
+Lja_Loader::getInstance()->register();
 
-LJA_Timer::start('application');
+Lja_Timer::start('application');
 
-$config = &LJA_Config::getInstance();
+$config = &Lja_Config::getInstance();
 
-$application = new LJA_Application(APPLICATION_ENV, $config);
+$application = new Lja_Application(APPLICATION_ENV, $config);
 $application->bootstrap()->run();
