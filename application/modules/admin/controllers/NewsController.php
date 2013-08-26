@@ -6,7 +6,7 @@ class Admin_NewsController extends Lja_Controller_Action_Member {
 		parent::init();
 
 		$this->mName = 'articles';
-		$this->force_where = ' Category='.intval(Lja_Config::appConfig()->article_category->news);
+		$this->force_where = ' Category='.intval(Lja_Config::appConfig()->db->article_category->news);
 	}
 
 	public function editAction() {
@@ -36,6 +36,7 @@ class Admin_NewsController extends Lja_Controller_Action_Member {
 		$p = &$_POST;
 		Lja_Uploader::SaveFilesOrder($p['attach_list_orders']);
 		
+		$_REQUEST['Category'] = Lja_Config::appConfig()->db->article_category->news;
 		if ($p['attach_list_orders']) {
 			$tmp = explode(',', $p['attach_list_orders']);
 			$_REQUEST['FirstAttach'] = $tmp[0];

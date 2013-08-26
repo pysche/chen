@@ -3,6 +3,15 @@
 class Lja_Funcs {
 	protected static $ip = '';
 	
+	public static function cutstr($str, $len, $suffix='...') {
+		$slen = iconv_strlen($str, 'utf-8');
+		if ($slen>$len) {
+			$str = iconv_substr($str, 0, $len, 'utf-8').' '.$suffix;
+		}
+
+		return $str;
+	}
+
 	public static function ip() {
 		if (self::$ip=='') {
 			self::$ip = getenv('HTTP_CLIENT_IP');

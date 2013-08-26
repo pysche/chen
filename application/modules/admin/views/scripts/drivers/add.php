@@ -95,6 +95,7 @@ var uploader = new AjaxUpload(panel.find('[data-role="upload_new"]').eq(0), {
 			panel.find('li.upload_error').text('上传失败: '+fresult.Err).removeClass('hidden');
 		} else {
 			Lja_AppendAttachRow(fresult, 'attach_list');
+			Lja_AttachListOrders('attach_list');
 		}
 	}
 });

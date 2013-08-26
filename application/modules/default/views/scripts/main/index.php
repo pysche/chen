@@ -3,11 +3,15 @@
 
 <table width="1003" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="806" height="225">
-      <param name="movie" value="images/index2.swf" />
-      <param name="quality" value="high" />
-      <embed src="images/index2.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="806" height="225"></embed>
-    </object></td>
+    <td>
+
+      <div id="banner">
+        <div class="slides_container">
+        <?php foreach ($this->banners as $file) { ?>
+        <a href='javascript:void(0);'><img width='806' height='225' src='<?php echo Lja_File::Url($file['id']);?>' /></a>
+        <?php } ?>
+      </div>
+    </td>
     <td><img src="images/ac_g_10.gif" width="198" height="225" /></td>
   </tr>
 </table>
@@ -57,27 +61,17 @@
             <td><img src="images/index_2013_01.gif" width="456" height="150" border="0" usemap="#Map4" /></td>
           </tr>
           <tr>
-            <td height="88" background="images/index_2013_02.gif"><table width="410" border="0" align="center" cellpadding="0" cellspacing="0">
+            <td height="88" background="images/index_2013_02.gif" valign="top"><table width="410" border="0" align="center" cellpadding="0" cellspacing="0">
+            <?php
+              foreach ($this->news as $news) {
+            ?>
               <tr>
-                <td width="339" height="30" class="w01">·<a href="/news/read" target="_blank" class="w01">辽河支流浑河上游发生超50年一遇特大洪水 大伙房水...</a></td>
-                <td width="71" align="right" class="w01">2013-8-12</td>
+                <td width="339" height="30" class="w01">·<a href="/news/read?id=<?php echo $news['id'];?>" target="_blank" class="w01"><?php echo Lja_Funcs::cutstr($news['Title'], 24);?></a></td>
+                <td width="71" align="right" class="w01"><?php echo substr($news['CreateTime'], 0, 10);?></td>
               </tr>
-              <tr>
-                <td height="28" class="w01">·<a href="#" class="w01">苏州安诚汽车代驾服务有限公司</a></td>
-                <td align="right" class="w01">2013-8-12</td>
-              </tr>
-              <tr>
-                <td height="28" class="w01">·<a href="#" class="w01">苏州安诚汽车代驾服务有限公司</a></td>
-                <td align="right" class="w01">2013-8-12</td>
-              </tr>
-              <tr>
-                <td height="28" class="w01">·<a href="#" class="w01">苏州安诚汽车代驾服务有限公司</a></td>
-                <td align="right" class="w01">2013-8-12</td>
-              </tr>
-              <tr>
-                <td height="28" class="w01">·<a href="#" class="w01">苏州安诚汽车代驾服务有限公司</a></td>
-                <td align="right" class="w01">2013-8-12</td>
-              </tr>
+            <?php
+              }
+            ?>
             </table></td>
           </tr>
           <tr>
@@ -144,24 +138,63 @@
     </table>
       <table width="990" border="0" align="center" cellpadding="0" cellspacing="0">
       <tr>
-        <td height="195" align="center" class="w01"><a href="#"><img src="images/man_01.jpg" width="120" height="150" border="0" /></a><br />
-            <u class="w01"><a href="#" class="w01">孙文涛</a></u></td>
-        <td align="center" class="w01"><img src="images/man_01.jpg" width="120" height="150" /><br />
-            <u class="w01">孙文涛</u></td>
-        <td align="center" class="w01"><img src="images/man_01.jpg" width="120" height="150" /><br />
-            <u class="w01">孙文涛</u></td>
-        <td align="center" class="w01"><img src="images/man_01.jpg" width="120" height="150" /><br />
-            <u class="w01">孙文涛</u></td>
-        <td align="center" class="w01"><img src="images/man_01.jpg" width="120" height="150" /><br />
-            <u class="w01">孙文涛</u></td>
-        <td align="center" class="w01"><img src="images/man_01.jpg" width="120" height="150" /><br />
-            <u class="w01">孙文涛</u></td>
+        <?php foreach ($this->drivers as $driver) { ?>
+        <td height="195" align="center" class="w01"><a href="#"><img src="<?php echo Lja_File::Url($driver['FirstAttach']);?>" width="120" height="150" border="0" /></a><br />
+            <u class="w01"><a href="#" class="w01"><?php echo $driver['Title'];?></a></u></td>
+        <?php } ?>
       </tr>
     </table></td>
   </tr>
 </table>
 <?php include(dirname(__FILE__).'/../include/bottom.php');?>
+<script type='text/javascript' src='/js/slides.js'></script>
+<script type='text/javascript'>
+$(function() {
+  $('#banner').slides({
+    preload: true,
+    preloadImage: '/img/loading.gif',
+    play: 3000,
+    pause: 2500,
+    hoverPause: true
+  });
 
+});
+</script>
+<style type='text/css'>
+#banner {
+  float: left;
+  height: 225px !important;
+  margin: 5px 0 0;
+  width: 806px !important;
+}
+.slides_container {
+    display: none;
+    overflow: hidden;
+    position: relative;
+    width: 806px;
+    height:225px;
+}
+.slides_container a {
+    display: block;
+    height: 215px;
+    width: 806px;
+}
+.slides_container a img {
+    display: block;
+}
+#slides .next, #slides .prev {
+    display: block;
+    height: 43px;
+    left: -39px;
+    position: absolute;
+    top: 107px;
+    width: 24px;
+    z-index: 101;
+}
+#slides .next {
+    left: 585px;
+}
+</style>
 
 <map name="Map2" id="Map2"><area shape="rect" coords="13,11,238,114" href="/" />
 </map>

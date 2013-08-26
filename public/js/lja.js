@@ -21,7 +21,7 @@ function Lja_FormatFileSize(size) {
 };
 
 function Lja_AttachListOrders(id) {
-	var aobj = navTab.getCurrentPanel().find('[data-role="attach_list"]').eq(0);
+	var aobj = navTab.getCurrentPanel().find('[data-role="'+id+'"]').eq(0);
 	size = aobj.find('li').size();
 	
 	if (size>0) {

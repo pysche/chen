@@ -4,7 +4,6 @@ $act = $_act ? $_act : 'insert';
 <form action="<?php echo $this->URL;?>/<?php echo $act;?>?navTabId=<?php echo $this->MODULE;?>" method="post" class="pageForm required-validate" onsubmit="return validateCallback(this, navTabAjaxDone)">
 <input type='hidden' name='id' value='<?php echo (int)$this->vo->id;?>' />
 <input type='hidden' name='callbackType' value='closeCurrent' />
-<input type='hidden' name='Category' value='<?php echo Lja_Config::appConfig()->article_category->news;?>' />
 <div class="pageContent">
 	<div class="pageFormContent" layoutH="58">
 		<dl class='block'>

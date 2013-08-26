@@ -12,17 +12,18 @@
         <td height="61"><img src="images/menu07.gif" width="257" height="53" /></td>
       </tr>
     </table>
+      <?php foreach ($this->list as $vo) { ?>
       <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
 
         <tr>
-          <td width="150" class="w01"><img src="images/index_2013_13a.gif" width="130" height="100" /></td>
+          <td width="150" class="w01"><img src="<?php echo Lja_File::Url($vo->FirstAttach);?>" width="130" height="100" /></td>
           <td class="w01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tr>
-              <td><span class="w02"><strong>酒店名称：利好海鲜酒楼</strong></span><br />
-酒店地址：工业园区独墅湖科教创新区月亮湾街8号(近独墅湖体育馆)</td>
+              <td><span class="w02"><strong>酒店名称：<?php echo $vo->Title;?></strong></span><br />
+酒店地址：<?php echo $vo->Address;?></td>
             </tr>
             <tr>
-              <td align="right"><a href="<?php echo $this->URL;?>/read?id="><img src="images/more.gif" width="55" height="20" border="0" /></a></td>
+              <td align="right"><a href="<?php echo $this->URL;?>/read?id=<?php echo $vo->id;?>"><img src="images/more.gif" width="55" height="20" border="0" /></a></td>
             </tr>
           </table></td>
         </tr>
@@ -32,172 +33,7 @@
           <td height="34" class="w01">-----------------------------------------------------------------------------------------------------------------------------------------------------</td>
         </tr>
       </table>
-      <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
-        <tr>
-          <td width="150" class="w01"><img src="images/index_2013_13a.gif" width="130" height="100" /></td>
-          <td class="w01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td><span class="w02"><strong>酒店名称：利好海鲜酒楼</strong></span><br />
-                  酒店地址：工业园区独墅湖科教创新区月亮湾街8号(近独墅湖体育馆)</td>
-              </tr>
-              <tr>
-                <td align="right"><a href="<?php echo $this->URL;?>/read?id="><img src="images/more.gif" width="55" height="20" border="0" /></a></td>
-              </tr>
-          </table></td>
-        </tr>
-      </table>
-      <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
-        <tr>
-          <td height="34" class="w01">-----------------------------------------------------------------------------------------------------------------------------------------------------</td>
-        </tr>
-      </table>
-      <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
-        <tr>
-          <td width="150" class="w01"><img src="images/index_2013_13a.gif" width="130" height="100" /></td>
-          <td class="w01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td><span class="w02"><strong>酒店名称：利好海鲜酒楼</strong></span><br />
-                  酒店地址：工业园区独墅湖科教创新区月亮湾街8号(近独墅湖体育馆)</td>
-              </tr>
-              <tr>
-                <td align="right"><a href="#"><img src="images/more.gif" width="55" height="20" border="0" /></a></td>
-              </tr>
-          </table></td>
-        </tr>
-      </table>
-      <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
-        <tr>
-          <td height="34" class="w01">-----------------------------------------------------------------------------------------------------------------------------------------------------</td>
-        </tr>
-      </table>
-      <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
-        <tr>
-          <td width="150" class="w01"><img src="images/index_2013_13a.gif" width="130" height="100" /></td>
-          <td class="w01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td><span class="w02"><strong>酒店名称：利好海鲜酒楼</strong></span><br />
-                  酒店地址：工业园区独墅湖科教创新区月亮湾街8号(近独墅湖体育馆)</td>
-              </tr>
-              <tr>
-                <td align="right"><a href="#"><img src="images/more.gif" width="55" height="20" border="0" /></a></td>
-              </tr>
-          </table></td>
-        </tr>
-      </table>
-      <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
-        <tr>
-          <td height="34" class="w01">-----------------------------------------------------------------------------------------------------------------------------------------------------</td>
-        </tr>
-      </table>
-      <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
-        <tr>
-          <td width="150" class="w01"><img src="images/index_2013_13a.gif" width="130" height="100" /></td>
-          <td class="w01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td><span class="w02"><strong>酒店名称：利好海鲜酒楼</strong></span><br />
-                  酒店地址：工业园区独墅湖科教创新区月亮湾街8号(近独墅湖体育馆)</td>
-              </tr>
-              <tr>
-                <td align="right"><a href="#"><img src="images/more.gif" width="55" height="20" border="0" /></a></td>
-              </tr>
-          </table></td>
-        </tr>
-      </table>
-      <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
-        <tr>
-          <td height="34" class="w01">-----------------------------------------------------------------------------------------------------------------------------------------------------</td>
-        </tr>
-      </table>
-      <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
-        <tr>
-          <td width="150" class="w01"><img src="images/index_2013_13a.gif" width="130" height="100" /></td>
-          <td class="w01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td><span class="w02"><strong>酒店名称：利好海鲜酒楼</strong></span><br />
-                  酒店地址：工业园区独墅湖科教创新区月亮湾街8号(近独墅湖体育馆)</td>
-              </tr>
-              <tr>
-                <td align="right"><a href="#"><img src="images/more.gif" width="55" height="20" border="0" /></a></td>
-              </tr>
-          </table></td>
-        </tr>
-      </table>
-      <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
-        <tr>
-          <td height="34" class="w01">-----------------------------------------------------------------------------------------------------------------------------------------------------</td>
-        </tr>
-      </table>
-      <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
-        <tr>
-          <td width="150" class="w01"><img src="images/index_2013_13a.gif" width="130" height="100" /></td>
-          <td class="w01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td><span class="w02"><strong>酒店名称：利好海鲜酒楼</strong></span><br />
-                  酒店地址：工业园区独墅湖科教创新区月亮湾街8号(近独墅湖体育馆)</td>
-              </tr>
-              <tr>
-                <td align="right"><a href="#"><img src="images/more.gif" width="55" height="20" border="0" /></a></td>
-              </tr>
-          </table></td>
-        </tr>
-      </table>
-      <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
-        <tr>
-          <td height="34" class="w01">-----------------------------------------------------------------------------------------------------------------------------------------------------</td>
-        </tr>
-      </table>
-      <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
-        <tr>
-          <td width="150" class="w01"><img src="images/index_2013_13a.gif" width="130" height="100" /></td>
-          <td class="w01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td><span class="w02"><strong>酒店名称：利好海鲜酒楼</strong></span><br />
-                  酒店地址：工业园区独墅湖科教创新区月亮湾街8号(近独墅湖体育馆)</td>
-              </tr>
-              <tr>
-                <td align="right"><a href="#"><img src="images/more.gif" width="55" height="20" border="0" /></a></td>
-              </tr>
-          </table></td>
-        </tr>
-      </table>
-      <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
-        <tr>
-          <td height="34" class="w01">-----------------------------------------------------------------------------------------------------------------------------------------------------</td>
-        </tr>
-      </table>
-      <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
-        <tr>
-          <td width="150" class="w01"><img src="images/index_2013_13a.gif" width="130" height="100" /></td>
-          <td class="w01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td><span class="w02"><strong>酒店名称：利好海鲜酒楼</strong></span><br />
-                  酒店地址：工业园区独墅湖科教创新区月亮湾街8号(近独墅湖体育馆)</td>
-              </tr>
-              <tr>
-                <td align="right"><a href="#"><img src="images/more.gif" width="55" height="20" border="0" /></a></td>
-              </tr>
-          </table></td>
-        </tr>
-      </table>
-      <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
-        <tr>
-          <td height="34" class="w01">-----------------------------------------------------------------------------------------------------------------------------------------------------</td>
-        </tr>
-      </table>
-      <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
-        <tr>
-          <td width="150" class="w01"><img src="images/index_2013_13a.gif" width="130" height="100" /></td>
-          <td class="w01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td><span class="w02"><strong>酒店名称：利好海鲜酒楼</strong></span><br />
-                  酒店地址：工业园区独墅湖科教创新区月亮湾街8号(近独墅湖体育馆)</td>
-              </tr>
-              <tr>
-                <td align="right"><a href="#"><img src="images/more.gif" width="55" height="20" border="0" /></a></td>
-              </tr>
-          </table></td>
-        </tr>
-      </table>
+      <?php } ?>
       <br />
       <table width="970" border="0" align="center" cellpadding="0" cellspacing="0">
         <tr>
