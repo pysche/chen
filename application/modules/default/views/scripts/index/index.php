@@ -64,8 +64,8 @@ body {
 </table>
 
 <map name="Map" id="Map">
-  <area shape="rect" coords="54,-9,266,74" href="ac_01.html" />
+  <area shape="rect" coords="54,-9,266,74" href="/main" />
 </map>
-<map name="Map2" id="Map2"><area shape="rect" coords="53,222,265,276" href="ac_01.html" />
+<map name="Map2" id="Map2"><area shape="rect" coords="53,222,265,276" href="/main" />
 </map></body>
 </html>
